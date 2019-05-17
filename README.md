@@ -1,6 +1,6 @@
 # Resources:
 + README.md: this file.
-+ result.csv:  result for different classifers and features. Measured by F1, Precision, Recall, Specificity, Accuracy, and AUC.
++ result.csv:  result for different classifers and features. Measured in F1, Precision, Recall, Specificity, Accuracy, and AUC.
 ###  source codes:
 + utils.py: provides functions of 
 ++ extracting 'closeness centrality' for graphs: get_closeness_centrality
