@@ -46,7 +46,7 @@ def to_adjacency_G(din,TOP):
             gene_idx += [int(subs[0]), int(subs[1])]
     gene_idx = list(set(gene_idx))
     NUM_NODE = len(gene_idx)
-    print('Number of nodes:', NUM_NODE)
+#     print('Number of nodes:', NUM_NODE)
     gene_idx.sort()
     old_new_idx = {}
     for i in range(NUM_NODE):

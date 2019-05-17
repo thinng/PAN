@@ -11833,7 +11833,7 @@ div#notebook {
     <span class="n">names</span> <span class="o">+=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">couples</span><span class="p">]</span>
     <span class="n">names</span> <span class="o">+=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">couples</span><span class="p">]</span>
 <span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="nb">set</span><span class="p">(</span><span class="n">names</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;len(names):&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">))</span>
+<span class="c1"># print(&#39;len(names):&#39;,len(names))</span>
 <span class="n">name_idx</span> <span class="o">=</span> <span class="p">{</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">))}</span>
 <span class="n">NUM_NODE</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">name_idx</span><span class="p">)</span>
 <span class="n">G</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11846,8 +11846,8 @@ div#notebook {
         <span class="n">m</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">G</span> <span class="o">+=</span> <span class="p">[</span><span class="n">m</span><span class="p">]</span>         
 <span class="n">ls</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="p">))</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">G</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of edges:&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>    
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">ls</span><span class="p">)),</span><span class="nb">int</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">ls</span><span class="p">)),</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># print(&#39;number of edges:&#39;, int(np.median(ls)/2))    </span>
+<span class="c1"># print(int(min(ls)),int(max(ls)),int(np.mean(ls)/2),int(np.median(ls)/2))</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 
 <span class="c1"># get features for this adjacency graph</span>
@@ -11874,10 +11874,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>len(names): 96
-number of edges: 204
-100 1172 216 204
-Done creating PPI graph!
+<pre>Done creating PPI graph!
 </pre>
 </div>
 </div>
