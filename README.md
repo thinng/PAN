@@ -3,7 +3,7 @@
 + README.md: this file.
 + result.csv:  result for different classifers and features. Measured in F1, Precision, Recall, Specificity, Accuracy, and AUC.
 
-###  source codes:
+###  Source codes:
 + utils.py: provides functions of (1) extracting 'closeness centrality' for graphs: get_closeness_centrality, (2) evaluating classification performance: evaluate, and (3) converting graphs of continuous weights to ajacency graphs: to_adjacency_G
 + PAN.ipynb: creates PAN graphs and returns their graph properties
 + LIONESS.ipynb: gets graph properties for LIONESS graphs returned by pypanda (https://github.com/davidvi/pypanda)
@@ -11,7 +11,7 @@
 + classification.ipynb: provides two classifers, SVM and LogisticRegression, with gene expression and graph propeties as features.
 + PAN.html, LIONESS.html, PPI.html, and classification.html: html files for PAN.ipynb, LIONESS.ipynb, PPI.ipynb, and classification.ipynb, respectively.
 
-### folder input_data/:
+### Folder input_data/:
 + UK207.csv: UK207 dataset. Other two datasets will be provided upon request.
 + hgncToKEGG.csv, hgncToDO.csv, hgncToHPO.csv: 3 ontologies.
 + COMBINED.DEFAULT_NETWORKS.BP_COMBINING.txt: gene interaction, from GeneMania (http://genemania.org/data/current/Rattus_norvegicus.COMBINED/)
