@@ -41,6 +41,7 @@ This returns
 + PAN_DO graph (saved in output_data/pan_DO_graph.csv) and the feature for this graph (output_data/pan_DO_graph_feature.csv) for the dataset.
 
 ## 2. LIONESS:
+(Please install pypanda, https://github.com/davidvi/pypanda)
 Running 
 ```sh
 ./pypanda  -e output_data/gene_expression.txt -o output_data/gene_expression_panda.txt -q output_data/lioness.txt
