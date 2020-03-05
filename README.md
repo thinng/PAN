@@ -66,4 +66,4 @@ Now all the graphs and their features are already extracted. They are the input 
 classification.ipynb
 ```
 This returns the performance for all the features in two classifers, saved in result.csv.
-A visualization on the average of ten-fold is saved at figs/SVM.png and figs/LR.png, for the two classfiers.
+A visualization on the average of ten-fold running is saved at figs/SVM.png and figs/LR.png, for the two classfiers.
