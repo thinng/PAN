@@ -4,7 +4,10 @@
 + result.csv:  The performance for different classifers and features. Measured in F1, Precision, Recall, Specificity, Accuracy, and AUC.
 
 ###  Source codes:
-+ utils.py: provides functions of (1) extracting 'closeness centrality' for graphs: get_closeness_centrality, (2) evaluating classification performance: evaluate, and (3) converting graphs of continuous weights to ajacency graphs: to_adjacency_G
++ utils.py: provides functions of 
+++ (1) extracting 'closeness centrality' for graphs: get_closeness_centrality, 
+++ (2) evaluating classification performance: evaluate, and 
+++ (3) converting graphs of continuous weights to ajacency graphs: to_adjacency_G
 + PAN.ipynb: creates PAN graphs and returns their graph properties
 + LIONESS.ipynb: gets graph properties for LIONESS graphs returned by pypanda (https://github.com/davidvi/pypanda)
 + PPI.ipynb: creates PPI graphs and returns their graph properties
